@@ -1,0 +1,58 @@
+[
+    {
+        "id":1,
+        "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/305439341.jpg?k=80728af4449dabb0f94a373904c4576f3a1f63a228b6984f60dc4426c82d7525&o=&hp=1",
+        "ocena":"9.1",
+        "ime":"Hotel Kamomil",
+        "lokacija":"Drač, Albania",
+        "cena":"70",
+        "staraCena":"85",
+        "total":"200"
+    },
+    {   "id":2,
+        "imageUrl":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/273076792.jpg?k=5cb683ba5db555146e2a471941e7fdecf7eb86754f97c11e45e683004d70e19a&o=&hp=1",
+        "ocena":"9.1",
+        "ime":"Hotel Vrbak",
+        "lokacija":"Novi Pazar, Srbija",
+        "cena":"25",
+        "staraCena":"30",
+        "total":"100"
+    },
+    {   "id":3,
+        "imageUrl":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/258885225.jpg?k=68ad46667f4335d629ad0544561c0cfe3fa170e4fd9c249f2c17745e5249e7d4&o=&hp=1"
+        ,"ocena":"8.4"
+        ,"ime":"Hotel Aqua Spa Termale"
+        ,"lokacija":"Novi Pazar, Srbija"
+        ,"cena":"35"
+        ,"staraCena":"50"
+        ,"total":"170"
+    },
+    {   "id":4,
+        "imageUrl":"https://assets.kerzner.com/api/public/content/51398544aeea4336a2673b3793b9a078?v=86721310&t=w2880"
+        ,"ocena":"9.5"
+        ,"ime":"Hotel Atlantis, The Palm"
+        ,"lokacija":"Dubai, UAE"
+        ,"cena":"600"
+        ,"staraCena":"650"
+        ,"total":"1800"
+    },
+    {   "id":5,
+        "imageUrl":"https://heaven-lux-ulcinj.hotelmix.fr/data/Photos/OriginalPhoto/10909/1090972/1090972851/Heaven-Lux-Ulcinj-Hotel-Exterior.JPEG"
+        ,"ocena":"8.5"
+        ,"ime":"Hotel Heaven"
+        ," lokacija":"Ulcinj, Montenegro"
+        ,"cena":"70"
+        ,"staraCena":"85"
+        ,"total":"220"
+    },
+    {
+        "id":6,
+        "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/562113293.jpg?k=c6f2192b0a74197a2ca96ecc7737a544cb2c3b4868decdd40c6183bd2d813d6d&o=&hp=1",
+        "ocena":"10",
+        "ime":"BUMAX Apartments",
+        "lokacija":"Ulcinj(Donji stoj), Montenegro",
+        "cena":"100",
+        "staraCena":"125",
+        "total":"500"
+    }
+]
