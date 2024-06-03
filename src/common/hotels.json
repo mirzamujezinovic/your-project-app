@@ -39,6 +39,7 @@
     {   "id":5,
         "imageUrl":"https://heaven-lux-ulcinj.hotelmix.fr/data/Photos/OriginalPhoto/10909/1090972/1090972851/Heaven-Lux-Ulcinj-Hotel-Exterior.JPEG"
         ,"ocena":"8.5"
+        ,"lokacija":"Ulcinj(Donji stoj), Montenegro"
         ,"ime":"Hotel Heaven"
         ," lokacija":"Ulcinj, Montenegro"
         ,"cena":"70"
@@ -54,5 +55,30 @@
         "cena":"100",
         "staraCena":"125",
         "total":"500"
-    }
+    },
+    {   "id":7,
+    "imageUrl":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/273076792.jpg?k=5cb683ba5db555146e2a471941e7fdecf7eb86754f97c11e45e683004d70e19a&o=&hp=1",
+    "ocena":"9.1",
+    "ime":"Hotel Vrbak",
+    "lokacija":"Novi Pazar, Srbija",
+    "cena":"25",
+    "staraCena":"30",
+    "total":"100"
+},  {   "id":8,
+"imageUrl":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/273076792.jpg?k=5cb683ba5db555146e2a471941e7fdecf7eb86754f97c11e45e683004d70e19a&o=&hp=1",
+"ocena":"9.1",
+"ime":"Hotel Vrbak",
+"lokacija":"Novi Pazar, Srbija",
+"cena":"25",
+"staraCena":"30",
+"total":"100"
+},  {   "id":9,
+"imageUrl":"https://cf.bstatic.com/xdata/images/hotel/max1024x768/273076792.jpg?k=5cb683ba5db555146e2a471941e7fdecf7eb86754f97c11e45e683004d70e19a&o=&hp=1",
+"ocena":"9.1",
+"ime":"Hotel Vrbak",
+"lokacija":"Novi Pazar, Srbija",
+"cena":"25",
+"staraCena":"30",
+"total":"100"
+}
 ]
