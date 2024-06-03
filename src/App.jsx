@@ -1,48 +1,38 @@
 
 import './App.css';
-import MyKartica from './components/Kartica/Kartica';
 // import MySentence from './components/MySentence/MySentence'
 // import Greeting from './components/Greeting/Greeting'
-import hotels from "./common/hotels.json"
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
+import { Route, Routes } from 'react-router-dom';
+import HotelDetails from './pages/Hotels/Hotels/Hotel';
+import Hotel from './pages/Hotels/Hotel/Hotel';
+import Home from './pages/Home/Home';
 function App() {
 
   return (
-    <>
     <div className="app">
     <header>
     <div className="header">
     <Navbar/>
     </div>
     </header>
-    <main>
+    <main className='main'>
+      <h1></h1>
     <div className="hotels">
-    {
-    hotels.map((hotel)=>(
-      <MyKartica
-      key={hotel.id}
-      imageUrl={hotel.imageUrl}
-      ocena={hotel.ocena}
-      ime={hotel.ime}
-      lokacija={hotel.lokacija}
-      cena={hotel.cena}
-      staraCena={hotel.staraCena}
-      total={hotel.total}
-
-      />
-
-    )
-  )
-    }
-  </div>
-  
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/hotels' element={<HotelDetails/>}/>
+        <Route path="/hotels/:id" element={<Hotel />} />
+      </Routes>
+    </div>
+    
     </main>
     <footer>
       <Footer/>
     </footer>
     </div>
-    </>
+    //<React.Fragment/>
   )
 }
 
