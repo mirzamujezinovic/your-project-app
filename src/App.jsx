@@ -5,7 +5,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import { Route, Routes } from 'react-router-dom';
-import HotelDetails from './pages/Hotels/Hotels/Hotel';
+import HotelDetails from './pages/Hotels/Hotels/Hotels';
 import Hotel from './pages/Hotels/Hotel/Hotel';
 import Home from './pages/Home/Home';
 function App() {
@@ -18,14 +18,13 @@ function App() {
     </div>
     </header>
     <main className='main'>
-      <h1></h1>
-    <div className="hotels">
+    
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/hotels' element={<HotelDetails/>}/>
         <Route path="/hotels/:id" element={<Hotel />} />
       </Routes>
-    </div>
+    
     
     </main>
     <footer>
