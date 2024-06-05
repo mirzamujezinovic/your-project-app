@@ -1,14 +1,26 @@
-.home1{
-    width: 1000px;
-    background-color: rgb(255, 255, 255);
+.home-page{
+    height: 100vh;
+    width: 100%;
+    background-image: url("https://wallpapercave.com/wp/wp6687041.jpg");
     display: flex;
-    flex-direction: column;
-    color: black;
-    text-align: left;
+    justify-content: left;
+    align-items: center;
+    height: 100vh;
 }
-.home1 h1{
-    width: auto;
+.home-tekst{
+    background-color: white;
+    width: 600px;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 0 5px  5px 0;
 }
-.home1 p{
+.home-tekst h1{
+    margin-bottom: 20px;
+}
+.home-tekst p{
     font-weight: bold;
+}
+.home-under{
+    background-color: white;
+    height: 100vh;
 }
