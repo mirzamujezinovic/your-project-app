@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import hotels from '../../../common/hotels.json';
-import Navbar from '../../../components/Navbar/Navbar';
 import './Hotel.css';
 
 function Hotel() {
@@ -14,7 +13,6 @@ function Hotel() {
 
     return (
         <div className='hotel-detail'>
-            <Navbar />
             <div className='hotel-content'>
                 <h1 className='hotel-name'>{hotel.ime}</h1>
                 <div className='hotel-body'>
