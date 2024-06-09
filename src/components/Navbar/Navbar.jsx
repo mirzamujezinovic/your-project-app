@@ -1,4 +1,5 @@
 import "./Navbar.css"
+import logo from "../../assets/logo.png"
 import { NavLink } from "react-router-dom";
 import { FaServicestack } from "react-icons/fa";
 import { AiOutlineProject } from "react-icons/ai";
@@ -15,14 +16,16 @@ function Navbar(){
         <div className="header">
             <NavLink to="/" >
             <div className="logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Booking.com_logo.svg/2560px-Booking.com_logo.svg.png" alt="slika"  />
+                <img src={logo} alt="slika"  />
             </div>
             </NavLink>
                 <div className="info">
                 <NavLink to="/hotels" className={({isActive})=>(isActive ? "active-link" : "classic-link")}>
                 <div className="search"><BiSolidHotel /><p>Hotel</p></div>
                 </NavLink>
-                <div className="services" ><FaServicestack /><p>Services</p></div>
+                <NavLink to="/teams" className={({isActive})=>(isActive ? "active-link" : "classic-link")}>
+                <div className="services" ><FaServicestack /><p>Teams</p></div>
+                </NavLink>
                 <div className="project" ><AiOutlineProject /><p>Projects</p></div>
                 <div className="aboutus" ><GoCommentDiscussion /><p>About Us</p></div>
                 <div className="contact"><MdOutlineLocalPhone /><p>Contact</p></div>
