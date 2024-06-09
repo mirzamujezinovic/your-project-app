@@ -1,6 +1,6 @@
 import "./Hotels.css"
 import hotels from "../../../common/hotels.json"
-import MyKartica from "../../../components/Kartica/Kartica";
+import MyKartica from "../../../components/Kartica/HotelCard/Kartica";
 
 
 
