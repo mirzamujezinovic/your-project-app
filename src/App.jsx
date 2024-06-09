@@ -1,13 +1,14 @@
 
 import './App.css';
-// import MySentence from './components/MySentence/MySentence'
-// import Greeting from './components/Greeting/Greeting'
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import { Route, Routes } from 'react-router-dom';
 import HotelDetails from './pages/Hotels/Hotels/Hotels';
 import Hotel from './pages/Hotels/Hotel/Hotel';
 import Home from './pages/Home/Home';
+import Teams from './pages/Teams/Teams';
+
+
 function App() {
 
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/hotels' element={<HotelDetails/>}/>
         <Route path="/hotels/:id" element={<Hotel />} />
+        <Route path='/teams' element={<Teams/>}/>
       </Routes>
     
     
