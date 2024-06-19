@@ -1,35 +1,53 @@
-import teams from "../../common/teams.json";
+import teamsJSON from "../../common/teams.json";
 import TeamCard from "../../components/Kartica/TeamCard/TeamCard";
 import "./Teams.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Teams() {
-  const [teamsList, setTeamsList] = useState(teams);
+  const [teams, setTeams] = useState(teamsJSON);
+  const [extended, setExtended] = useState(null);
 
-  const handleDelete = (teamName) => {
-    const updatedTeams = teamsList.filter((team) => team.team_name !== teamName);
-    setTeamsList(updatedTeams);
+  // console.log(Math.random(0, 1));
+  // console.log(new Date().getTime());
+  const deleteTeam = (id) => {
+    const filteredTeams = teams.filter((team) => team.id !== id);
+    setTeams(filteredTeams);
   };
-
+  useEffect(() => {
+    const newTeams = teamsJSON.map((team) => {
+      const teamId = Math.random(0, 100000000000);
+      return {
+        ...team,
+        id: teamId,
+      };
+    });
+    setTeams(newTeams);
+  }, []);
   return (
     <>
       <div className="list">
-        {teamsList.map((value) => (
-          <TeamCard
-            id={value.id}
-            name={value.team_name}
-            points={`${value.points}pts`}
-            wins={value.wins}
-            loses={value.loses}
-            draws={value.draws}
-            losses={value.losses}
-            matches={value.matches_played}
-            onDelete={() => handleDelete(value.team_name)}
-          />
-        ))}
+        {teams.map((team, index) => {
+          return (
+            <TeamCard
+              key={index}
+              id={team.id}
+              name={team["team_name"]}
+              points={`${team["points"]}pts`}
+              wins={team.wins}
+              loses={team.loses}
+              draws={team.draws}
+              losses={team.losses}
+              matches={team.matches_played}
+              deleteTeam={() => deleteTeam(team.id)}
+              extended={extended}
+              setExtended={setExtended}
+            />
+          );
+        })}
       </div>
     </>
   );
 }
+
 
 export default Teams;

@@ -1,4 +1,4 @@
-.teamCard {
+.team-card {
   background-color: aliceblue;
   display: grid;
   grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -6,13 +6,10 @@
   align-content: center;
   justify-content: center;
   border-radius: 15px;
-  padding: 10px;
-  transition: height 0.3s;
   margin-top: 100px;
-}
-
-.showMore {
-  height: 170px;
+  transition: height 0.3s;
+  align-items: center;
+  padding: 10px;
 }
 
 .h2 {
@@ -29,21 +26,10 @@
   grid-column: span 6;
 }
 
-.show {
-  background-color: #000000;
-  color: rgb(0, 191, 255);
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top:  10px;
+.delete-btn {
+  cursor: "pointer";
+  background-color: rgb(250, 145, 8);
 }
-.trashIcon {
-  color: rgb(0, 191, 255);
-  cursor: pointer;
-  height: 40px;
-  /* position: absolute; */
-  /* top: 10px; */
-  /* right: 10px; */
-  background-color: rgb(0, 0, 0);
+.p button{
+  border: 1px solid black;
 }
