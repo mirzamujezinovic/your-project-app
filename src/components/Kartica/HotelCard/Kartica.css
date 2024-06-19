@@ -1,83 +1,87 @@
-
-.hotel-kartica{
-    background-color: rgb(6, 6, 6);
+.hotel-kartica {
+    background-color: #f2f2f2;
     width: 320px;
     border-radius: 10px;
-    box-shadow:  4px  0 8px  rgb(0, 187, 255);
+    box-shadow: 0 10px 20px rgba(129, 126, 126, 0.337); /* Dodaj senku za 3D efekat */
     overflow: hidden;
     text-align: left;
-    color: rgb(255, 255, 255);
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: perspective(1000px) rotateX(0deg); /* Dodaj perspektivu i rotaciju */
+    transition: transform 0.5s ease;
 }
-.hotel-kartica .photo{
-    position: relative;
+
+.hotel-kartica:hover {
+    transform: perspective(1000px) rotateX(5deg); /* Rotiraj na hover */
 }
-.hotel-kartica img{
+
+.hotel-kartica .photo img {
     width: 100%;
     height: 215px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: translateZ(0); /* Potrebno za WebKit renderovanje */
 }
-.hotel-info{
+
+.hotel-info {
     padding: 15px;
-
 }
-.ocena{
+
+.ocena {
     font-size: 16px;
-    
+    margin-bottom: 8px;
 }
 
-.hotel-ime{
-    font-size: 18px;
+.hotel-ime {
+    font-size: 20px;
     font-weight: bold;
-    margin: 10px 0;
+    margin-bottom: 8px;
+    color: #333;
 }
-.lokacija{
+
+.lokacija {
     font-size: 14px;
-    color: gray;
+    color: #666;
+    margin-bottom: 10px;
 }
-.cena{
-    font-size: 23px;
-    color: rgb(10, 157, 237);
+
+.cena {
+    font-size: 24px;
+    color: #ff6600;
     font-weight: bold;
-    margin: 10px 0;
+    margin-bottom: 8px;
 }
-.stara-cena{
+
+.stara-cena {
     font-size: 14px;
-    color: gray;
+    color: #999;
     text-decoration: line-through;
     margin-left: 10px;
 }
-.total-cena{
+
+.total-cena {
     font-size: 14px;
-    color: gray;
-}
-.member-cena{
-    gap: 15px;
-    display: inline-block;
-    margin-top: 10px;
-    background-color: #0044cc;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    text-align: center;
-    justify-content: flex-start;
-    align-items: center;
-    cursor: pointer;
-    display: flex;
+    color: #666;
+    margin-bottom: 10px;
 }
 
-.card-price{
+.card-price {
     width: 100%;
-    gap: 15px;
-    display: inline-block;
-    margin-top: 10px;
-    background-color: #0044cc;
-    color: white;
-    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
-    justify-content: flex-start;
-    align-items: center;
     cursor: pointer;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.card-price:hover {
+    background-color: #0056b3;
 }
