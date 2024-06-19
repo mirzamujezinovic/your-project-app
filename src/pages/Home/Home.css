@@ -1,26 +1,166 @@
-.home-page{
+/* Home.css */
+
+.home-page {
     height: 100vh;
     width: 100%;
-    background-image: url("https://wallpapercave.com/wp/wp6687041.jpg");
+    background-image: url("https://media.mitsishotels.com/uploads/2023/09/mitsis-kos-summerpalace-suite-livingroom-hd.jpg");
+    background-size: cover; 
     display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 100vh;
+    justify-content: center; 
+    align-items: center; 
+    color: white; 
+    text-align: center; 
+    position: relative; 
 }
-.home-tekst{
-    background-color: white;
+
+.home-tekst {
+    background-color: rgba(255, 255, 255, 0.821); 
     width: 600px;
-    padding: 5px;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;    
-    border-radius: 0 10px  10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 50px; 
+    color: rgb(0, 0, 0);
 }
-.home-tekst h1{
-    margin-bottom: 20px;
+
+.home-tekst h1 {
+    margin-bottom: 10px;
+    position: relative; 
 }
-.home-tekst p{
-    font-weight: bold;
+
+.home-tekst h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: rgb(1, 217, 255); 
+    margin: 10px auto;
 }
-.home-under{
-    background-color: white;
+
+.home-tekst p {
+    font-weight: normal;
+}
+
+.home-under {
+    background-color: rgb(240, 240, 240); 
+    text-align: center; 
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-top: 10px; 
+}
+
+.home-under-page1{
+    background-color: rgb(255, 255, 255);
     height: 100vh;
+    margin: 0px;
+    align-items: center;
+}
+
+.home-kartice{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+.home-under-page1 h1{
+    margin-bottom: 50px;
+    color: white;
+}
+.home-kartica1{
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    border: 4px solid cyan;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    color: aliceblue;
+}
+.home-kartica1 {
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.home-kartica1:hover {
+    transform: rotateY(20deg);
+}
+
+.home-kartica1 h2{
+    text-decoration: underline;
+}
+.home-kartica2{
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    border: 4px solid cyan;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    color: aliceblue;
+
+}
+.home-kartica2 h2{
+    text-decoration: underline;
+
+}
+.home-kartica2 {
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.home-kartica2:hover {
+    transform: rotateY(20deg);
+}
+
+.home-kartica3{
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    border: 4px solid cyan;
+    border-radius: 15px;
+    color: aliceblue;
+
+}
+.home-kartica3 h2{
+    text-decoration: underline;
+}
+.home-kartice-logo{
+    margin-top: 20px;
+    font-size: 100px;
+}
+.home-kartica1 p{
+    font-size: 16px;
+}
+
+.home-kartica1-tekst{
+    text-align: left;
+    padding: 5px;
+}
+
+.home-kartica2 p{
+    font-size: 16px;
+}
+
+.home-kartica2-tekst{
+    text-align: left;
+    padding: 5px;
+}
+.home-kartica3-tekst{
+    text-align: left;
+    padding: 5px;
+}
+.home-kartica3 p{
+    font-size:16px ;
+    text-align: left;
+}
+.home-kartica3 {
+    transition: transform 0.3s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.home-kartica3:hover {
+    transform: rotateY(20deg);
 }
