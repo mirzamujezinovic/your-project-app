@@ -1,0 +1,20 @@
+.pagination{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+.pagination-btn{
+    display: flex;
+    
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+.pagination-btns{
+    color: aqua;
+}
